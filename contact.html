@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact us | WCAN</title>
+<meta name="description" content="Contact WCAN, a community climate action network in Victoria.">
+<meta property="og:title" content="Contact us | WCAN">
+<meta property="og:description" content="Contact WCAN, a community climate action network in Victoria.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><!-- Replace with logo --><span class="brand-mark" aria-hidden="true"></span>WCAN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="our-work.html">Our work</a></li>
+          <li class="nav-item"><a class="nav-link" href="get-involved.html">Get involved</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="page-header">
+  <div class="container">
+    <h1>Contact us</h1>
+    <p class="lead">Questions, ideas, or want to get involved? Send us a message and we’ll get back to you as soon as we can.</p>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <h2>Send us a message</h2>
+        <noscript><p class="note">This form needs JavaScript. Please email us at <a href="mailto:wcangroup@outlook.com">wcangroup[at]outlook[dot]com</a> instead.</p></noscript>
+        <div id="form-status" role="alert" aria-live="polite" tabindex="-1"></div>
+        <form id="contact-form" method="post" action="php/contact.php" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your name <span class="req">(required)</span></label>
+            <input type="text" class="form-control" id="name" name="name" maxlength="100" autocomplete="name" required aria-describedby="err-name">
+            <div class="field-error" id="err-name"></div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your email <span class="req">(required)</span></label>
+            <input type="email" class="form-control" id="email" name="email" maxlength="254" autocomplete="email" required aria-describedby="err-email">
+            <div class="field-error" id="err-email"></div>
+          </div>
+          <div class="mb-3">
+            <label for="topic" class="form-label">What is your message about?</label>
+            <select class="form-select" id="topic" name="topic" aria-describedby="err-topic">
+              <option>General question</option>
+              <option>Volunteering</option>
+              <option>Membership</option>
+              <option>Donations</option>
+              <option>Partnerships</option>
+              <option>Media</option>
+              <option>Other</option>
+            </select>
+            <div class="field-error" id="err-topic"></div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your message <span class="req">(required)</span></label>
+            <textarea class="form-control" id="message" name="message" rows="6" maxlength="3000" required aria-describedby="err-message"></textarea>
+            <div class="field-error" id="err-message"></div>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="consent" name="consent" value="1" required aria-describedby="err-consent">
+            <label for="consent" class="form-check-label">I agree that WCAN may use my details to reply to this message, as described in the <a href="privacy.html">Privacy Policy</a>. <span class="req">(required)</span></label>
+            <div class="field-error" id="err-consent"></div>
+          </div>
+          <div class="hp" aria-hidden="true"><label for="website">Leave this field empty</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
+          <input type="hidden" name="token" value="">
+          <button type="submit" class="btn btn-wattle btn-lg">Send message</button>
+        </form>
+      </div>
+      <div class="col-lg-5">
+        <div class="contact-card">
+          <h2 class="h4">Contact details</h2>
+          <p class="mb-1"><strong>Organisation</strong><br>Whittlesea Climate Action Network (WCAN)</p>
+          <p class="mb-1"><strong>Email</strong><br><a href="mailto:wcangroup@outlook.com">wcangroup[at]outlook[dot]com</a></p>
+          <p class="mb-1"><strong>Phone</strong><br>To be confirmed</p>
+          <p class="mb-3"><strong>Address</strong><br>We are a community-led network operating across the City of Whittlesea, rather than a standalone office.</p>
+          <p class="small mb-0">Social media: coming soon.</p>
+        </div>
+        <p class="small mt-3">In an emergency, call <strong>000</strong>. For fire and weather warnings, see <a href="https://www.emergency.vic.gov.au" target="_blank" rel="noopener noreferrer">VicEmergency<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h2 class="h5">Contact</h2>
+        <p class="mb-1">Email: <a href="mailto:wcangroup@outlook.com">wcangroup[at]outlook[dot]com</a></p>
+        <p class="mb-1">Phone: To be confirmed</p>
+        <p>We are a community-led network operating across the City of Whittlesea, rather than a standalone office.</p>
+      </div>
+      <div class="col-6 col-md-2">
+        <h2 class="h5">Explore</h2>
+        <ul class="list-unstyled">
+          <li><a href="about.html">About us</a></li><li><a href="our-work.html">Our work</a></li><li><a href="get-involved.html">Get involved</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h2 class="h5">Legal</h2>
+        <ul class="list-unstyled">
+          <li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li><li><a href="data-cookies.html">Data and cookies</a></li><li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h2 class="h5">Follow us</h2>
+        <!-- Social links: add icons here when profiles exist, e.g. <a href="#" aria-label="Facebook">...</a> -->
+        <ul class="social list-unstyled d-flex gap-2" id="social"></ul>
+        <p class="small">Social media coming soon.</p>
+      </div>
+    </div>
+    <hr>
+    <!-- <p class="ack">We acknowledge the Traditional Owners of the land on which we live and work, and pay our respects to Elders past and present.</p> -->
+    <p class="small mb-0">&copy; <span id="year">2026</span> Whittlesea Climate Action Network (WCAN). All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact.js"></script>
+</body>
+</html>
